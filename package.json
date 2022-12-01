@@ -1,5 +1,5 @@
 {
-  "name": "public-apis",
+  "name": "browser-friendly-public-apis",
   "private": true,
   "version": "0.0.0",
   "type": "module",
