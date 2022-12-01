@@ -2,40 +2,112 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body * {
+  margin: 0px;
+  padding: 0;
+  line-height: 1.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
-  to {
-    transform: rotate(360deg);
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1,
+p {
+  font-family: Lato;
 }
 
-.card {
-  padding: 2em;
+h1 {
+  margin-bottom: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.API {
+  margin: 20px;
+  background: #ddd;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: row;
+}
+
+.fields * {
+  padding: 0px 10px 2px 0px;
+}
+
+.titleRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleRow * {
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+input {
+  margin-top: 10px;
+  padding-left: 5px;
 }
